@@ -280,7 +280,7 @@
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
           <useReleaseProfile>false</useReleaseProfile>
-          <goals>deploy</goals>
+          <goals>javadoc:aggregate-jar deploy</goals>
           <arguments>-Peclipse-release -Paggregate-javadoc-jar</arguments>
           <preparationGoals>clean install</preparationGoals>
           <mavenExecutorId>forked-path</mavenExecutorId>
@@ -1310,7 +1310,7 @@
               <artifactId>maven-javadoc-plugin</artifactId>
               <configuration>
                 <attach>true</attach>
-                <excludePackageNames>com.acme,*.jmh*,org.eclipse.jetty.embedded,org.eclipse.jetty.example.asyncrest,org.eclipse.jetty.test</excludePackageNames>
+                <excludePackageNames>com.acme,*.jmh*,org.eclipse.jetty.embedded*,org.eclipse.jetty.example.asyncrest*,org.eclipse.jetty.test*</excludePackageNames>
               </configuration>
             </plugin>
           </plugins>
