@@ -1315,8 +1315,8 @@
                   <goals>
                     <goal>aggregate-jar</goal>
                   </goals>
-                  <phase>install</phase>
                   <configuration>
+                    <attach>true</attach>
                     <excludePackageNames>com.acme,*.jmh*,org.eclipse.jetty.embedded,org.eclipse.jetty.example.asyncrest,org.eclipse.jetty.test</excludePackageNames>
                   </configuration>
                 </execution>
